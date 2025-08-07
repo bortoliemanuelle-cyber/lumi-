@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <title>LUMI - EmotivaTech</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: linear-gradient(to right, #e0f7fa, #fce4ec);
+      margin: 0;
+      padding: 0;
+      text-align: center;
+    }
+
+    header {
+      background-color: #6200ea;
+      color: white;
+      padding: 20px;
+      font-size: 30px;
+    }
+
+    .container {
+      margin-top: 50px;
+    }
+
+    img {
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    }
+
+    h2 {
+      color: #333;
+    }
+
+    .price {
+      font-size: 28px;
+      color: #388e3c;
+      margin: 10px 0;
+    }
+
+    .btn {
+      padding: 12px 25px;
+      background-color: #ff4081;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #f50057;
+    }
+
+    .message {
+      margin-top: 20px;
+      font-weight: bold;
+      color: #2e7d32;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  LUMI - EmotivaTech 💡❤️
+</header>
+
+<div class="container">
+  <img src="Pulseira.jpg" alt="LUMI">
+  <h2>Relógio Inteligente Emocional LUMI</h2>
+  <p class="price">R$100,00</p>
+  <button class="btn" onclick="comprar()">Ver Produto</button>
+
+  <div id="mensagem" class="message"></div>
+</div>
+
+<script>
+  function comprar() {
+    document.getElementById("mensagem").innerHTML = "🎉 Obrigado por visitar a LUMI! Em breve você poderá comprar nosso produto!";
+  }
+</script>
+
+</body>
+</html>
